@@ -5,6 +5,13 @@
     font-family:'Poppins', 'Pacifico', cursive;
 }
 
+@font-face {
+    font-family: 'MyFont';
+    src: url('Ref\ -\ VitaBella/FontsFree-Net-Merengue-Script-W00-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
 body{
     background: #f7f1ed;
     color: #333;
@@ -54,7 +61,7 @@ nav a {
 
 .herosection {
     position: relative;
-    height: 100vh;
+    height: 150vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,20 +82,41 @@ nav a {
 }
 
 .herosection h1{
-    font-size: 60px;
-    font-family: Pacifico, cursive;
-    max-width: 300px;
+    position: relative;
+    display: inline-block;
+    font-size: 85px;
+    font-family: 'MyFont', cursive;
+    max-width: 500px;
+    letter-spacing: 0%;
     margin: auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    padding-bottom: 30px;
+    line-height: 100%;
+}
+
+.small-text {
+    font-size: 75px;
+    font-family: 'MyFont', cursive;
+    max-width: 500px;
+    letter-spacing: 0%;
+    margin: auto;
+}
+
+.white-leaf-icon {
+    position: absolute;
+    top: -40px;
+    right: -20px;
+    width: 80px;
+    height: 80px;
 }
 
 .herosection p{
-    font-size: 24px;
-    font-family: Poppins, sans-serif;
-    max-width: 300px;
+    font-size: 34px;
+    font-family: Helvetica;
+    font-weight: lighter;
+    max-width: 400px;
     margin: auto;
-    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
 }
 
 .favorites {
@@ -98,13 +126,21 @@ nav a {
 }
 
 .favorites h2 {
-    font-size: 48px;
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: 55px;
     margin-bottom: 10px;
+    letter-spacing: 6%;
     color: #271D15;
+    margin-bottom: 30px;
 }
 
 .favorites p {
-    font-size: 21px;
-    margin-bottom: 30px;
+    font-size: 29px;
+    font-family: Helvetica;
+    font-weight: lighter;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
     color: #271D15;
 }
