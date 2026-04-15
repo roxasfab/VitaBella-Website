@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: 'MyFont';
-    src: url('Ref\ -\ VitaBella/FontsFree-Net-Merengue-Script-W00-Regular.ttf') format('truetype');
+    src: url('Ref-VitaBella/Fonts/FontsFree-Net-Merengue-Script-W00-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -77,8 +77,8 @@ nav a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('c:\\Users\\roxas\\Pictures\\Ref - VitaBella\\Hero section\\Vita Bella Image.png') center/cover no-repeat;
-    z-index: -1;
+    background: url('Ref-VitaBella/Home Page/Hero section/Vita Bella Image.png')center/cover no-repeat;
+    z-index: -2;
 }
 
 .herosection h1{
@@ -136,7 +136,7 @@ nav a {
 }
 
 .favorites p {
-    font-size: 29px;
+    font-size: 24px;
     font-family: Helvetica;
     font-weight: lighter;
     padding-bottom: 30px;
