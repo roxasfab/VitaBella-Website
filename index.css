@@ -506,3 +506,180 @@ nav a {
     cursor: pointer;
     transition: transform 0.2s ease;
 }
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+
+    nav {
+        padding: 28px 65px;
+    }
+
+    .navbar-left,
+    .navbar-right {
+        gap: 140px;
+    }
+
+    .logo img {
+        height: 95px;
+    }
+
+    .herosection {
+        height: 135vh;
+        padding: 0 60px;
+    }
+
+    .herosection h1 {
+        font-size: clamp(72px, 5vw, 85px);
+        max-width: 520px;
+        padding-bottom: 25px;
+    }
+
+    .small-text {
+        font-size: clamp(62px, 4vw, 75px);
+    }
+
+    .white-leaf-icon {
+        width: 75px;
+        height: 75px;
+        top: -35px;
+        right: -18px;
+    }
+
+    .herosection p {
+        font-size: clamp(28px, 2vw, 34px);
+        max-width: 380px;
+        padding-left: 0;
+    }
+
+    .favorites {
+        padding: 55px 40px;
+    }
+
+    .favorites h2 {
+        font-size: clamp(48px, 4vw, 55px);
+    }
+
+    .favorites p {
+        font-size: clamp(20px, 2vw, 24px);
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .favorites-wrapper {
+        width: 85%;
+    }
+
+    .drink-slide,
+    .active-drink-slide {
+        min-width: 270px;
+        margin: 0 15px;
+    }
+
+    .drink-slide img,
+    .active-drink-slide img {
+        height: 460px;
+    }
+
+    .drink-slide {
+        transform: scale(0.65);
+    }
+
+    .active-drink-slide {
+        transform: scale(0.95);
+    }
+
+    .button {
+        width: 52px;
+        height: 52px;
+        font-size: 28px;
+    }
+
+    .button.left {
+        left: -50px;
+    }
+
+    .button.right {
+        right: -50px;
+    }
+
+    .view-menu-button,
+    .view-ingredients-button {
+        padding: 18px 45px;
+        font-size: 19px;
+    }
+
+    .about-bgimg-container {
+        height: 95vh;
+    }
+
+    .about-section {
+        height: 160vh;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .about-section h1 {
+        font-size: clamp(72px, 5vw, 85px);
+        min-width: auto;
+    }
+
+    .about-slider {
+        width: 820px;
+        max-width: 100%;
+    }
+
+    .about-card {
+        padding: 20px;
+    }
+
+    .about-card h2 {
+        font-size: 28px;
+    }
+
+    .about-card p {
+        font-size: 20px;
+    }
+
+    .about-button {
+        width: 52px;
+        height: 52px;
+        font-size: 30px;
+    }
+
+    .left {
+        left: -85px;
+    }
+
+    .right {
+        right: -85px;
+    }
+
+    .footer-card {
+        width: 1100px;
+        min-height: 460px;
+        padding: 40px 45px;
+    }
+
+    .footer-content {
+        max-width: 550px;
+    }
+
+    .follow-us,
+    .store-location {
+        font-size: 23px;
+    }
+
+    .footer-content p,
+    .location {
+        font-size: 15px;
+    }
+
+    .footer-icons {
+        margin-top: 280px;
+        gap: 35px;
+    }
+
+    .footer-icons img {
+        width: 38px;
+        height: 38px;
+    }
+}
