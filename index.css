@@ -312,7 +312,7 @@ nav a {
 
 .about-section {
     position: relative;
-    height: 170vh;
+    height: 130vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -428,7 +428,7 @@ nav a {
 }
 
 .about-footer {
-    margin-top: 140px;
+    margin-top: 80px;
     width: 100%;
     display: flex;
     flex-direction: column;
