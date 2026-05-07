@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inclusive Sans, sans-serif;
+}
+
+body {
+    display: flex;
+    background: #f5f1ea;
+}
+
+.menu-sidebar {
+    width: 220px;
+    height: 100vh;
+    background: pink;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 20px;
+}
+
+.logo {
+    height: 63px;
+    width: auto;
+    object-fit: contain;
+}
+
+.menu-sidebar ul {
+    list-style: none;
+}
+
+.menu-sidebar li {
+    padding: 12px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.menu-sidebar li:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+.menu-sidebar li.active {
+    background: lightpink
+}
+
+.main {
+    margin-left: 220px;
+    width: calc(100% - 220px);
+}
+
+.menu-hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.menu-slider {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.2);
+    color: white;
+    font-size: 25px;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: white;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+.menu {
+    padding: 40px;
+    text-align: center;
+}
+
+.menu h2{
+    font-size: 40px;
+    color: #38220F;
+    font-family: Merriweather, serif;
+}
+
+.filters {
+    margin: 20px 0;
+}
+
+.filters button {
+    padding: 15px 35px;
+    margin: 15px;
+    font-size: 18px;
+    border: none;
+    background: #632323;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.filters button:hover {
+
+    background: white;
+    transition: 0.3s;
+    color: #632323;
+}
+
+.filters button.active {
+    background: #E3963E;
+    color: white;
+}
+
+.drinks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    justify-items: center;
+}
+
+.card {
+    width: 140px;
+    text-align: center;
+}
+
+.card-img {
+    width: 140px;
+    height: 240px; 
+    background: linear-gradient(to bottom, #d9cfc3, #bfa890);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.card-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.card p {
+    margin-top: 8px;
+    font-size: 18px;
+    color: #3b2a1f;
+    align-items: center;
+}
+
+.card-img:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(to bottom, #bfa890, #d9cfc3);
+}
+
+.blueberry-cheesecake {
+    transform: scale(2.2);
+    transition: transform 0.3s ease;
+}
+
+.blueberry-cheesecake:hover {
+    transform: scale(2.2) rotate(5deg);
+}
+
+.oreo-matcha-frappe {
+    transform: scale(2.2);
+    transition: transform 0.3s ease;
+    margin-left: 10px;
+}
+
+.oreo-matcha-frappe:hover {
+    transform: scale(2.2) rotate(5deg);
+}
+
+.hokkaido-frappe {
+    transform: scale(1.8);
+    transition: transform 0.3s ease;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.hokkaido-frappe:hover {
+    transform: scale(1.8) rotate(5deg);
+}
+
+.choco-berry-latte {
+    transform: scale(2.2);
+    transition: transform 0.3s ease;
+    margin-left: 50px;
+}
+
+.choco-berry-latte:hover {
+    transform: scale(2.2) rotate(5deg);
+}
+
+.thirteen-in-one-coffee {
+    transform: scale(1.8);
+    transition: transform 0.3s ease;
+    margin-right: 25px;
+}
+
+.thirteen-in-one-coffee:hover {
+    transform: scale(1.8) rotate(5deg);
+}
+
+.malunggay-beverage {
+    transform: scale(2);
+    transition: transform 0.3s ease;
+    margin-right: 5px;
+}
+
+.malunggay-beverage:hover {
+    transform: scale(2) rotate(5deg);
+}
+
+.caffe-latte {
+    transform: scale(2);
+    transition: transform 0.3s ease;
+    margin-right: 7px;
+}
+
+.caffe-latte:hover {
+    transform: scale(2) rotate(5deg);
+}
+
+.choco-matcha-berry {
+    transform: scale(1.8);
+    transition: transform 0.3s ease;
+    margin-left: 15px;
+}
+
+.choco-matcha-berry:hover {
+    transform: scale(1.8) rotate(5deg);
+}
+
+.strawberry-collagen-cream {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    margin-left: 10px;
+}
+
+.strawberry-collagen-cream:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.salted-caramel {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.salted-caramel:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.iced-collagen-classic {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    margin-top: 10px;
+}
+
+.iced-collagen-classic:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.oreo-matcha-cheesecake {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.oreo-matcha-cheesecake:hover {
+    transform: scale(1) rotate(5deg);
+}
+
+.french-premium-cheesecake {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.french-premium-cheesecake:hover {
+    transform: scale(1) rotate(5deg);
+}
+
+.red-velvet-cheesecake {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.red-velvet-cheesecake:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.okinawa-frappe {
+    transform: scale(1.1);
+    margin-right: 5px;
+    transition: transform 0.3s ease;
+}
+
+.okinawa-frappe:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.green-apple {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.green-apple:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.basil-seeds {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.basil-seeds:hover {
+    transform: scale(1) rotate(5deg);
+}
+
+.lychee-nata {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.lychee-nata:hover {
+    transform: scale(1) rotate(5deg);
+}
+
+.tapioca-pearls {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.tapioca-pearls:hover {
+    transform: scale(1) rotate(5deg);
+}
+
+.coffee-jelly {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.coffee-jelly:hover {
+    transform: scale(1) rotate(5deg);
+}
+
+.rose-foam {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.rose-foam:hover {
+    transform: scale(1) rotate(5deg);
+}
+
+.whipped-cream {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.whipped-cream:hover {
+    transform: scale(1) rotate(5deg);
+}
+
+.matcha-foam {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.matcha-foam:hover {
+    transform: scale(1) rotate(5deg);
+}
+
+.oreo {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.oreo:hover {
+    transform: scale(1) rotate(5deg);
+}
